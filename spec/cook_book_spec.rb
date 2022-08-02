@@ -5,7 +5,17 @@ require './lib/cook_book'
 
 RSpec.describe CookBook do
 
+  before :each do
+    @ingredient1 = Ingredient.new({name: "Cheese", unit: "oz", calories: 50})
+    @ingredient2 = Ingredient.new({name: "Macaroni", unit: "oz", calories: 200})
+    @recipe1 = Recipe.new("Mac and Cheese")
+    @recipe2 = Recipe.new("Cheese Burger")
+    @cookbook = CookBook.new
+  end
 
+  it 'exists' do
+    expect(@cookbook).to be_a(CookBook)
+  end
 
 
 end
