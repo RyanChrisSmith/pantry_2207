@@ -55,8 +55,8 @@ RSpec.describe Recipe do
     @recipe2.add_ingredient(@ingredient3, 4)
     @recipe2.add_ingredient(@ingredient4, 1)
 
-    expect(@recipe1.total_calories).to eq 440
-    expect(@recipe2.total_calories).to eq 675
+    expect(@recipe1.total_calories).to eq 440 #cannot figure out how to get this number
+    expect(@recipe2.total_calories).to eq 675 #cannot figure out how to get this number
   end
 
 end
