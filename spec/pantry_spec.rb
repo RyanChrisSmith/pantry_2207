@@ -15,5 +15,9 @@ RSpec.describe Pantry do
     expect(@pantry.stock).to eq({})
   end
 
+  it 'can check the number of items in stock' do
+    expect(@pantry.stock_check).to eq 0
+  end
+
 
 end
