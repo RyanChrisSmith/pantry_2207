@@ -1,4 +1,4 @@
-require './lib/pantry'
+require './lib/ingredient'
 
 RSpec.describe Ingredient do
 
