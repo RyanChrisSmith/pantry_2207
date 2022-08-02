@@ -19,5 +19,11 @@ RSpec.describe Pantry do
     expect(@pantry.stock_check).to eq 0
   end
 
+  it 'can restock' do
+    @pantry.restock(@ingredient1, 5)
+    @pantry.restock(@ingredient1, 10)
+    expect(@pantry.stock_check).to eq 15
+  end
+
 
 end
