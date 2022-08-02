@@ -40,7 +40,7 @@ RSpec.describe Recipe do
     expect(@recipe1.ingredients).to eq([@ingredient1, @ingredient2])
   end
 
-  xit 'can show total calories' do
+  it 'can show total calories' do
     @pantry = Pantry.new
     @cookbook = CookBook.new
     @ingredient1 = Ingredient.new({name: "Cheese", unit: "oz", calories: 50})
